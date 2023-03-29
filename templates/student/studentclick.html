@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <style media="screen">
+    .jumbotron {
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+
+    .jumbotron h1 {
+      text-align: center;
+    }
+    .box {
+    width: 500px;
+    padding: 15px;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    background: hsl(188, 78%, 40%);
+    text-align: center;
+    transition: 0.25s;
+    margin-top: 100px
+}
+
+.box input[type="button"],
+.box input[type="button"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #c52323;
+    padding: 10px 10px;
+    width: 250px;
+    outline: none;
+    color: hsl(188, 78%, 40%);
+    
+    border-radius: 24px;
+    transition: 0.25s
+}
+
+.box h3 {
+    color: rgb(239, 169, 169);
+    text-transform: uppercase;
+    font-weight: 500
+}
+
+
+
+.box input[type="button"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer
+}
+
+.box input[type="submit"]:hover {
+    background: #2ecc71
+}
+
+  </style>
+
+</head>
+
+<body>
+
+  {% include "quiz/navbar.html" %}
+  <br><br>
+  
+
+  <div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <form class="box">
+                  <div class="jumbotron" style="margin-bottom:0px;">
+                    <h3 class="display-4">Hello, User</h3>
+                    <p class="lead">Welcome to Online Quiz</p>
+                    <hr class="my-4">
+                    <p>You can access various features after Login.</p>
+                    <p class="lead">
+                      <a class="btn btn-primary btn-lg" type="button" href="studentsignup" role="button">Create Your Account</a>
+                      <a class="btn btn-primary btn-lg" type="button "href="studentlogin" role="button">Login</a>
+                    </p>
+                    <br><br><br><br><br><br>
+                  </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+
+</html>
